@@ -1,73 +1,33 @@
-:root {
-    --bg-color: #6F4E37;
-    --primary-color: #ECB176;
-    --secundary-color: #FED8B1;
-    --font: Grandstander;
-  }
-  
-  body {
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    font-family: var(--font);
-    height: 100vh;
-    margin: 0;
-  }
-  
-  header {
-    background-color: var(--primary-color);
-    text-align: center;
-    padding: 1px;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    color: var(--bg-color);
-    font-weight: 700;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: var(--bg-color);
-    margin: 0 2rem 1rem 0rem;
-    font-size: 1.2rem;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-    transform: scale(0.90);
-    transition: transform 0.1s;
-  }
-  
-  .graficos-container__texto {
-    font-size: 1.3rem;
-    text-align: center;
-    padding: 2rem;
-    border: var(--secundary-color) solid 2px;
-  }
-  
-  #graficos-container {
-    margin: 5rem;
-  }
-  
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary-color);
-    color: var(--bg-color);
-    width: 100%;
-    height: 3rem;
-    margin-top: 2rem;
-  }  
-
-  span{
-    font-weight: bold ;
-    color: white ;
-    background-color: var(--secundary-color) ;
-  }
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação</title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <header>
+        <h1>Relatório sobre a Educação</h1>
+        <nav>
+            <a href="index.html">Mundo</a>
+            <a href="#">Minha escola</a>
+        </nav>
+    </header>
+    <main class="graficos-section">
+        <section id="graficos-container" class="graficos-container">
+          <!-- <p class="graficos-container__texto">
+                Você sabia que o mundo tem 7.888 bilhões de pessoas que aproximadamente 5.04 bilhões estão conectadas em alguma rede social e passam em média 2 horas e 38 minutos conectadas.
+                Isso significa que aproximadamente 63.89% de pessoas conectadas em alguma rede social.
+            </p> -->
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por matheus wilson</p>
+    </footer>
+    <script type="module" src="graficos/informacoesGlobais.js"></script>
+    <script type="module" src="graficos/quantidadeUsuarios.js"></script>
+</body>
+</html>
+   
